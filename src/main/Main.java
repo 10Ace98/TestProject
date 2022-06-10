@@ -1,23 +1,25 @@
 package main;
 import java.util.Scanner;
 
+import student2.*;
+
 public class Main {
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >>>");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš” >>>");
 		int user=scan.nextInt();
 		while(true) {
-			System.out.println("1. ±è¼ö¿µ ÇĞ»ıÀÇ °ü¸®ÀÌµ¿");
-			System.out.println("2. Á¤±¤Àç ÇĞ»ıÀÇ °ü¸®ÀÌµ¿");
-			System.out.println("3. À¯º´Çö ÇĞ»ıÀÇ °ü¸®ÀÌµ¿");
-			System.out.println("4. Á¾·á");
+			System.out.println("1. ê¹€ìˆ˜ì˜ í•™ìƒì˜ ê´€ë¦¬ì´ë™");
+			System.out.println("2. ì •ê´‘ì¬ í•™ìƒì˜ ê´€ë¦¬ì´ë™");
+			System.out.println("3. ìœ ë³‘í˜„ í•™ìƒì˜ ê´€ë¦¬ì´ë™");
+			System.out.println("4. ì¢…ë£Œ");
 			switch(user) {
 			case 1:
-			case 2:
+			case 2: ProgramStart st = new ProgramStart();
 			case 3:
 			case 4:
 				default :
-				System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+				System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 			}
 		}
 	}
