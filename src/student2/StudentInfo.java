@@ -8,14 +8,6 @@ public class StudentInfo {
 	
 	public StudentInfo() {}
 	
-	
-	public StudentInfo(String name, String studentID, int age) {
-		this.name = name;
-		StudentID = studentID;
-		this.age = age;
-	}
-
-
 	public String getName() {
 		return name;
 	}

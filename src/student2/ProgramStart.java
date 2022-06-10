@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class ProgramStart {
 	
+	static boolean flag = true;
 	
 	
 	public ProgramStart() {
 
+	flag = true;
 	
-	boolean flag = true;
 	Scanner scan = new Scanner(System.in);
 	Methods M = new Methods();
 
