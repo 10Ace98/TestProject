@@ -9,29 +9,29 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		while(true) {
-			System.out.println("1. í•™ìƒë“±ë¡ 2. í•™ìƒê²€ìƒ‰ 3. í•™ìƒì‚­ì œ\n4. ìˆ˜ì • 5. ëª¨ë“ í•™ìƒì¶œë ¥ 6. ì¢…ë£Œ");
-			
+			System.out.println("1. ÇĞ»ıµî·Ï 2. ÇĞ»ı°Ë»ö 3. ÇĞ»ı»èÁ¦\n4. ¼öÁ¤ 5. ¸ğµçÇĞ»ıÃâ·Â 6. Á¾·á");
+
 			switch (scan.nextInt()) {
 			case 1:
-				System.out.println("í•™ìƒë“±ë¡");
+				System.out.println("ÇĞ»ıµî·Ï");
 				break;
 			case 2:
-				System.out.println("í•™ìƒê²€ìƒ‰");
+				System.out.println("ÇĞ»ı°Ë»ö");
 				break;
 			case 3:
-				System.out.println("í•™ìƒì‚­ì œ");
+				System.out.println("ÇĞ»ı»èÁ¦");
 				break;
 			case 4:
-				System.out.println("ìˆ˜ì •");
+				System.out.println("¼öÁ¤");
 				break;
 			case 5:
-				System.out.println("ëª¨ë“  í•™ìƒì„ ì¶œë ¥í•©ë‹ˆë‹¤.");
+				System.out.println("¸ğµç ÇĞ»ıÀ» Ãâ·ÂÇÕ´Ï´Ù.");
 				break;
 			case 6:
-				System.out.println("ì‹œìŠ¤í…œ ì¢…ë£Œ");
+				System.out.println("½Ã½ºÅÛ Á¾·á");
 				break;
 			default:
-				System.out.println("ì˜ëª»ì…ë ¥");
+				System.out.println("Àß¸øÀÔ·Â");
 				break;
 			}
 		}

@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class admin {
 	Scanner scan = new Scanner(System.in);
 	ArrayList<admin> arr = new ArrayList<admin>();
-	
+
 	private String name;
 	private int age, id;
 
@@ -38,19 +38,19 @@ public class admin {
 class reg{
 	public reg() {
 		admin ad = new admin();
-		System.out.println("ë“±ë¡í•  í•™ìƒì˜ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
+		System.out.println("µî·ÏÇÒ ÇĞ»ıÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä");
 		name = scan.next();
-		System.out.println("ë“±ë¡í•  í•™ìƒì˜ ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
+		System.out.println("µî·ÏÇÒ ÇĞ»ıÀÇ ¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
 		id = scan.nextInt();
-		System.out.println("ë“±ë¡í•  í•™ìƒì˜ ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
+		System.out.println("µî·ÏÇÒ ÇĞ»ıÀÇ ³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
 		age = scan.nextInt();
 		if(name==null||id==0||age==0) {
-			System.out.println("ë“±ë¡í•œ ì •ë³´ë¥¼ í™•ì¸í•˜ì„¸ìš”");
+			System.out.println("µî·ÏÇÑ Á¤º¸¸¦ È®ÀÎÇÏ¼¼¿ä");
 		}else {
-			System.out.println(name+"í•™ìƒì´ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤.");
+			System.out.println(name+"ÇĞ»ıÀÌ µî·ÏµÇ¾ú½À´Ï´Ù.");
 		}
 		ad.setName(name); ad.setId(id); ad.setAge(age);
 		}
 	}
-	
+
 }
