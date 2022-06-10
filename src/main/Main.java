@@ -9,8 +9,6 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner scan=new Scanner(System.in);
-		System.out.println("숫자를 입력하세요 >>>");
-		int user=scan.nextInt();
 		Student3 s3=new Student3();
 		
 		while(true) {
@@ -19,7 +17,7 @@ public class Main {
 			System.out.println("3. 유병현 학생의 관리이동");
 			System.out.println("4. 종료");
 			System.out.println("숫자를 입력하세요 >>>");
-			user = scan.nextInt();
+			int user = scan.nextInt();
 			
 			switch(user) {
 			
