@@ -4,53 +4,164 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class admin {
-	Scanner scan = new Scanner(System.in);
-	ArrayList<admin> arr = new ArrayList<admin>();
 	
+	public static ArrayList<admin> arr = new ArrayList<admin>();
+	private Scanner scan = new Scanner(System.in);
 	private String name;
-	private int age, id;
+	private int id,age;
+	public void program() {
+		while(true) {
+			int num;
+			System.out.println("1. ÇĞ»ıµî·Ï 2. ÇĞ»ı°Ë»ö 3. ÇĞ»ı»èÁ¦\n4. ¼öÁ¤ 5. ¸ğµçÇĞ»ıÃâ·Â 6. Á¾·á");
+			num = scan.nextInt();
+			switch (num) {
+			case 1:
+				reg();
+				break;
+			case 2:
+				search();
+				break;
+			case 3:
+				delete();
+				break;
+			case 4:
+				mod();
+				break;
+			case 5:
+				list();
+				break;
+			case 6:
+				break;
+			default:
+				System.out.println("Àß¸øÀÔ·Â");
+				break;
+			}
+		}
+	}
+	public void list() {
+		for (admin adm : arr) {
+			System.out.println("¾ÆÀÌµğ : "+adm.getId());
+			System.out.println("ÀÌ¸§ : "+adm.getName());
+			System.out.println("³ªÀÌ : "+adm.getAge());
+			System.out.println("========================");
+		}
+	}
+	
+	public void mod() {
+		System.out.println("¼öÁ¤ÇÒ ¾ÆÀÌµğ ÀÔ·Â");
+		id = scan.nextInt();
+		int i=0;
+		for(;i<arr.size();i++) {
+			if(arr.get(i).getId()==id) {
+				System.out.println("¾ÆÀÌµğ : "+arr.get(i).getId());
+				System.out.println("ÀÌ¸§ : "+arr.get(i).getName());
+				System.out.println("³ªÀÌ : "+arr.get(i).getAge());
+				System.out.println("¼öÁ¤ÇÒ ÀÌ¸§ : ");
+				name = scan.next();
+				System.out.println("¼öÁ¤ÇÒ ³ªÀÌ : ");
+				age = scan.nextInt();
+				admin a = arr.get(i);
+				a.setName(name);
+				a.setAge(age);
+				a.setId(id);
+				arr.remove(i);
+				arr.add(a);
+				System.out.println("¼öÁ¤¿Ï·á");
+				break;
+			}
+		}
+		if(i==arr.size()) {
+			System.out.println("ÇØ´ç ¾ÆÀÌµğ ¾øÀ½.");
+		}
+	}
+	
+	public void delete() {
+		System.out.println("»èÁ¦ÇÒ ¾ÆÀÌµğ ÀÔ·Â");
+		id = scan.nextInt();
+		int i=0;
+		for(;i<arr.size();i++) {
+			if(arr.get(i).getId()==id) {
+				System.out.println(arr.get(i).getName()+"ÀÇ Á¤º¸¸¦ Á¤¸» »èÁ¦ÇÕ´Ï±î?");
+				System.out.println("1. YES 2. NO");
+				int num = scan.nextInt();
+				if(num==1) {
+					arr.remove(i);
+					System.out.println("»èÁ¦ ÇÕ´Ï´Ù");
+					break;
+				}else {
+					System.out.println("»èÁ¦¸¦ Ãë¼ÒÇÕ´Ï´Ù.");
+					break;
+				}
+			}
+		}if(i==arr.size()) {
+			System.out.println("Á¤º¸¸¦ ´Ù½Ã È®ÀÎÇØÁÖ¼¼¿ä");
+		}
+	}
+	
+	public void search() {
+		System.out.println("°Ë»öÇÒ ¾ÆÀÌµğ ÀÔ·Â");
+		id = scan.nextInt();
+		int i=0;
+		for(;i<arr.size();i++) {
+			if(arr.get(i).getId()==id) {
+				System.out.println("¾ÆÀÌµğ : "+arr.get(i).getId());
+				System.out.println("ÀÌ¸§ : "+arr.get(i).getName());
+				System.out.println("³ªÀÌ : "+arr.get(i).getAge());
+				break;
+			}
+		}
+		if(i==arr.size()) {
+			System.out.println("ÇØ´ç ÇĞ»ı ¾øÀ½");
+		}
+	}
+	
+	public void reg() {
+		admin ad = new admin();
+		while(true) {
+			System.out.println("¾ÆÀÌµğ(ÇĞ¹ø)ÀÔ·Â");
+			id = scan.nextInt();
+			int i=0;
+			for(;i<arr.size();i++) {
+				if(arr.get(i).getId()==id) {
+					System.out.println("µ¿ÀÏÇÑ ¾ÆÀÌµğ(ÇĞ¹ø) Á¸Àç");
+					break;
+				}
+			}
+			if(i==arr.size()) 
+				break;
+		}
+		System.out.println("ÀÌ¸§ ÀÔ·Â");
+		name = scan.next();
+		System.out.println("³ªÀÌ ÀÔ·Â");
+		age = scan.nextInt();
+		
+		ad.setId(id);
+		ad.setName(name);
+		ad.setAge(age);
+		arr.add(ad);
+		System.out.println("µî·Ï¿Ï·á");
+	}
 
+	
+	
+	
+	
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
-
 		this.id = id;
 	}
-
-class reg{
-	public reg() {
-		admin ad = new admin();
-		System.out.println("ë“±ë¡í•  í•™ìƒì˜ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");
-		name = scan.next();
-		System.out.println("ë“±ë¡í•  í•™ìƒì˜ ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
-		id = scan.nextInt();
-		System.out.println("ë“±ë¡í•  í•™ìƒì˜ ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
-		age = scan.nextInt();
-		if(name==null||id==0||age==0) {
-			System.out.println("ë“±ë¡í•œ ì •ë³´ë¥¼ í™•ì¸í•˜ì„¸ìš”");
-		}else {
-			System.out.println(name+"í•™ìƒì´ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤.");
-		}
-		ad.setName(name); ad.setId(id); ad.setAge(age);
-		}
+	public int getAge() {
+		return age;
 	}
-	
+	public void setAge(int age) {
+		this.age = age;
+	}
 }
