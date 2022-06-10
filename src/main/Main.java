@@ -21,7 +21,8 @@ public class Main {
 			
 			switch(user) {
 			
-			case 1:	Program p = new Program();
+			case 1:	admin a = new admin();
+			a.program();
 				break;
 			case 2: ProgramStart st = new ProgramStart();
 				break;

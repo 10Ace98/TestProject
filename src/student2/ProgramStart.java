@@ -17,8 +17,8 @@ public class ProgramStart {
 	
 	while(flag) {
 		
-		System.out.println("1. ÇĞ»ıµî·Ï  2. ÇĞ»ı°Ë»ö  3. ÇĞ»ı»èÁ¦");
-		System.out.println("4. Á¤º¸¼öÁ¤  5. ¸ğµçÇĞ»ı Ãâ·Â 6. Á¾·á");
+		System.out.println("1. í•™ìƒë“±ë¡  2. í•™ìƒê²€ìƒ‰  3. í•™ìƒì‚­ì œ");
+		System.out.println("4. ì •ë³´ìˆ˜ì •  5. ëª¨ë“ í•™ìƒ ì¶œë ¥ 6. ì¢…ë£Œ");
 		int choice = scan.nextInt();
 		
 		switch(choice) {
