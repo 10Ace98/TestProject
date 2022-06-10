@@ -3,27 +3,27 @@ package student2;
 public class Methods {
 
 	public void Register() {
-		System.out.println("ê°€ìž…");
+		System.out.println("°¡ÀÔ");
 	}
 	
 	public void Search() {
-		System.out.println("ì°¾ê¸°");
+		System.out.println("Ã£±â");
 	}
 	
 	public void Remove() {
-		System.out.println("ì‚­ì œ");
+		System.out.println("»èÁ¦");
 	}
 	
 	public void Edit() {
-		System.out.println("ìˆ˜ì •");
+		System.out.println("¼öÁ¤");
 	}
 	
 	public void ViewAll() {
-		System.out.println("ì „ì²´ì¶œë ¥");
+		System.out.println("ÀüÃ¼Ãâ·Â");
 	}
 	
 	public void Exit() {
-		System.out.println("ì¢…ë£Œ");
+		System.out.println("Á¾·á");
 	}
 	
 }

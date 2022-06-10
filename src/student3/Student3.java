@@ -9,9 +9,9 @@ public class Student3 {
 	
 	public void start() {
 		while(true) {
-			System.out.println("===========    í•™ìƒ ê´€ë¦¬ í”„ë¡œê·¸ë¨    =========== ");
-			System.out.println("1. ë“±ë¡ 2.ê²€ìƒ‰ 3.ì‚­ì œ 4.ìˆ˜ì • 5. ëª¨ë“ í•™ìƒ ì¶œë ¥ 6.ì¢…ë£Œ");
-			System.out.println("ìˆ«ì ì…ë ¥ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+			System.out.println("===========    ÇĞ»ı °ü¸® ÇÁ·Î±×·¥    =========== ");
+			System.out.println("1. µî·Ï 2.°Ë»ö 3.»èÁ¦ 4.¼öÁ¤ 5. ¸ğµçÇĞ»ı Ãâ·Â 6.Á¾·á");
+			System.out.println("¼ıÀÚ ÀÔ·Â >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 			user=scan.nextInt();
 			switch(user) {
 			case 1:
@@ -30,33 +30,35 @@ public class Student3 {
 				list();
 				break;
 			case 6:
-				System.out.println("ì‹œìŠ¤í…œì„ ì¢…ë£Œí•©ë‹ˆë‹¤..");
+				System.out.println("½Ã½ºÅÛÀ» Á¾·áÇÕ´Ï´Ù..");
 				System.exit(user);
 				default :
-					System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤ !");
+					System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù !");
 			}
 		}
 	}
 	
 	public void insert() {
-		System.out.println("ë“±ë¡");
+		System.out.println("µî·Ï");
 	}
 	
 	public void search() {
-		System.out.println("ê²€ìƒ‰");
+		System.out.println("°Ë»ö");
 	}
 	
 	public void delete() {
-		System.out.println("ì‚­ì œ");
+		System.out.println("»èÁ¦");
 	}
 	
 	public void update() {
-		System.out.println("ìˆ˜ì •");
+		System.out.println("¼öÁ¤");
 	}
 	
 	public void list() {
-		System.out.println("ëª¨ë“  ì¶œë ¥");
+		System.out.println("¸ğµç Ãâ·Â");
 	}
 
 	
 }
+
+
